@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title> {% block title %} {% endblock %} | Puddle</title>
+
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+
+{% include 'core/navbar.html' %}
+
+
+    
+    <div class="px-6 py-6">
+        {% block content %}
+
+
+
+        {% endblock %}
+    
+    </div>
+
+
+</body>
+</html>
