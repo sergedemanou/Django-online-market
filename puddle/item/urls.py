@@ -4,7 +4,8 @@ from django.conf import settings
 from django.conf.urls.static import static
 
 
+app_name = 'item'
+
 urlpatterns = [
-    path('', views.index, name='index'),
-    path('contact/', views.contact, name='contact')
-]
+    path('<int:pk>/', views.detail, name='detail'),
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
