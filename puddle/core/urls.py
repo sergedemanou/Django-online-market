@@ -4,7 +4,10 @@ from django.conf import settings
 from django.conf.urls.static import static
 
 
+app_name = 'core'
+
 urlpatterns = [
     path('', views.index, name='index'),
-    path('contact/', views.contact, name='contact')
+    path('contact/', views.contact, name='contact'),
+    path('signup/', views.signup, name='signup'),
 ]
