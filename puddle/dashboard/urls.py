@@ -4,9 +4,8 @@ from django.conf import settings
 from django.conf.urls.static import static
 
 
-app_name = 'item'
+app_name = 'dashboard'
 
 urlpatterns = [
-    path('<int:pk>/', views.detail, name='detail'),
-    path('new/', views.new, name='new'),
+    path('index2/', views.my_items, name='index2'),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
