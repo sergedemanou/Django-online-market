@@ -2,3 +2,6 @@ https://www.youtube.com/watch?v=ZxMB6Njs3ck&ab_channel=freeCodeCamp.org
 
 superuser: admin
 pass: admin123
+
+coco
+pass : Lome2024

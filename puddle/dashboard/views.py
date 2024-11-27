@@ -8,3 +8,4 @@ def my_items(request):
     items = Item.objects.filter(created_by=request.user)
 
     return render(request, 'dashboard/index2.html', {'items': items})
+
